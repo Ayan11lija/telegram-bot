@@ -118,13 +118,13 @@ return $template;
 
 $db = new MysqliDb ('mysql-arturo.alwaysdata.net','arturo','15112003Aa!','arturo_dior');
 
-$telegram = new Telegram("5456276655:AAFt3u9hGVZxA72kBJrTc9W-Bmp7CWjLJBA");
+$telegram = new Telegram("7638618978:AAHZVGSG_jFLEr8VmBUSKUS106NAHogE1Go");
 
 
 
 date_default_timezone_set('America/Bogota');
-$Mi_Id = "6365131242";
-$botToken =  "5456276655:AAFt3u9hGVZxA72kBJrTc9W-Bmp7CWjLJBA";
+$Mi_Id = "7092074614";
+$botToken =  "7638618978:AAHZVGSG_jFLEr8VmBUSKUS106NAHogE1Go";
 $website = "https://api.telegram.org/bot".$botToken;
 $update = $telegram->getData();
 $cchatid2 = $update["callback_query"]["message"]["chat"]["id"];
@@ -294,7 +294,7 @@ function eliminarRegistrosAntiguos() {
 
             // Verificar si timedate es menor que el tiempo actual.
             if ($timedate < $tiempoActual) {
-                file_get_contents("https://api.telegram.org/bot5456276655:AAFt3u9hGVZxA72kBJrTc9W-Bmp7CWjLJBA/kickChatMember?chat_id=-1001711130201&user_id=$userid");
+                file_get_contents("https://api.telegram.org/bot7638618978:AAHZVGSG_jFLEr8VmBUSKUS106NAHogE1Go/kickChatMember?chat_id=-1001711130201&user_id=$userid");
                 $sqlDelete = "DELETE FROM prmiumtime WHERE userid = '$userid'";
                 if ($roles->query($sqlDelete) !== TRUE) {
                     logsummary("Error al eliminar registro para el usuario con ID $userid: " . $conn->error);
