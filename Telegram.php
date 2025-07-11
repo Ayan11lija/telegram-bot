@@ -84,7 +84,7 @@ class Telegram
      */
     const MY_CHAT_MEMBER = 'my_chat_member';
 
-    private $bot_token = '';
+    private $bot_token = '7638618978:AAHZVGSG_jFLEr8VmBUSKUS106NAHogE1Go';
     private $data = [];
     private $updates = [];
     private $log_errors;
