@@ -22,7 +22,7 @@ class CurlX
         CURLOPT_SSL_VERIFYHOST => 0
     ];
 
-    private static string $current_dir = 'https://www.ayan.ac;
+    private static string $current_dir = '';
 
     private static $ch;
 
